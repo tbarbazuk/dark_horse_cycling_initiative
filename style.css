@@ -8,9 +8,9 @@ body {
 }
 
 header {
-  background-color: #1a001f;  /* Dark purple */
+  background-color: #c084fc;
   color: #e0e0e0;
-  padding: 1rem;
+  padding: 2rem 1rem;  /* Increased top/bottom padding */
   text-align: center;
   position: relative;
   display: flex;
@@ -31,7 +31,7 @@ header {
 /* Header title */
 header h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 nav {
@@ -84,11 +84,31 @@ h2 {
   color: #ffffff;
 }
 
+/* New: Title under the name (e.g., President) */
+.title {
+  font-weight: bold;
+  color: #c084fc;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
 .discipline {
   font-style: italic;
   color: #bbbbbb;
   font-size: 1rem;
   margin-top: 0.2rem;
+}
+
+/* Section headers for Race Team / Club Team */
+.team-section-header {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: #c084fc;
+  border-bottom: 2px solid #c084fc;
+  display: inline-block;
+  padding-bottom: 0.3rem;
 }
 
 /* News items */

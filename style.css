@@ -3,13 +3,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fdfdfd;
-  color: #333;
+  background-color: #0e0e0e;  /* Dark black */
+  color: #e0e0e0;             /* Light gray text */
 }
 
 header {
-  background-color: #111;
-  color: white;
+  background-color: #1a001f;  /* Dark purple */
+  color: #e0e0e0;
   padding: 1rem;
   text-align: center;
   position: relative;
@@ -32,7 +32,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #e0e0e0;
   text-decoration: none;
   margin: 0 1rem;
   font-weight: bold;
@@ -40,8 +40,8 @@ nav a {
 
 nav a.active,
 nav a:hover {
+  color: #c084fc; /* Light purple highlight */
   text-decoration: underline;
-  color: #ffd700;
 }
 
 main {
@@ -54,6 +54,7 @@ h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
+  color: #c084fc;
 }
 
 /* Team section */
@@ -67,18 +68,18 @@ h2 {
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #444;
+  border: 3px solid #c084fc;
 }
 
 .team-member h3 {
   margin-top: 0.5rem;
   font-size: 1.4rem;
-  color: #222;
+  color: #ffffff;
 }
 
 .discipline {
   font-style: italic;
-  color: #666;
+  color: #bbbbbb;
   font-size: 1rem;
   margin-top: 0.2rem;
 }
@@ -86,22 +87,28 @@ h2 {
 /* News items */
 .news-item {
   margin-bottom: 2rem;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-left: 4px solid #c084fc;
+  border-radius: 6px;
 }
 
 .news-item h3 {
   margin-bottom: 0.3rem;
-  color: #222;
+  color: #ffffff;
 }
 
 .news-item p {
   margin: 0.2rem 0;
+  color: #d0d0d0;
 }
 
 /* Footer */
 footer {
-  background-color: #111;
-  color: white;
+  background-color: #1a001f;
+  color: #c084fc;
   text-align: center;
   padding: 1rem;
   margin-top: 3rem;
 }
+

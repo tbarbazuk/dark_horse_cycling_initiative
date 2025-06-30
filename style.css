@@ -1,85 +1,107 @@
-/* Reset some default styles */
-* {
-  box-sizing: border-box;
+/* General layout */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Body styles */
-body {
-  background-color: #f4f7fa;
+  background-color: #fdfdfd;
   color: #333;
-  line-height: 1.6;
-  padding: 20px;
 }
 
-/* Header styles */
 header {
-  display: flex;
-  align-items: center;
-  background-color: #004080; /* Dark blue */
+  background-color: #111;
   color: white;
-  padding: 1rem 2rem;
-  gap: 1rem; /* space between logo, title, and nav */
-  flex-wrap: wrap;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
 }
 
 .logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
   height: 60px;
-  width: auto;
-  display: block;
 }
 
 header h1 {
   margin: 0;
-  font-size: 1.8rem;
-  flex-shrink: 0;
+  font-size: 2rem;
 }
 
 nav {
-  margin-left: auto; /* Push nav to the right */
+  margin-top: 1rem;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin-left: 1.2rem;
+  margin: 0 1rem;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
-nav a:hover,
-nav a.active {
+nav a.active,
+nav a:hover {
   text-decoration: underline;
-  color: #a0c4ff; /* lighter blue on hover */
+  color: #ffd700;
 }
 
-/* Main content styles */
 main {
   max-width: 900px;
   margin: 2rem auto;
   padding: 0 1rem;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-main h2 {
-  margin-bottom: 1rem;
-  color: #004080;
-}
-
-/* Paragraph styles */
-main p {
-  margin-bottom: 1.25rem;
-  font-size: 1.1rem;
-}
-
-/* Footer styles */
-footer {
+h2 {
   text-align: center;
-  margin: 3rem 0 1rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Team section */
+.team-member {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #444;
+}
+
+.team-member h3 {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  color: #222;
+}
+
+.discipline {
+  font-style: italic;
   color: #666;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
+/* News items */
+.news-item {
+  margin-bottom: 2rem;
+}
+
+.news-item h3 {
+  margin-bottom: 0.3rem;
+  color: #222;
+}
+
+.news-item p {
+  margin: 0.2rem 0;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
 }

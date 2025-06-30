@@ -76,6 +76,9 @@ h2 {
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #c084fc;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-member h3 {
@@ -84,7 +87,6 @@ h2 {
   color: #ffffff;
 }
 
-/* New: Title under the name (e.g., President) */
 .title {
   font-weight: bold;
   color: #c084fc;
@@ -99,7 +101,6 @@ h2 {
   margin-top: 0.2rem;
 }
 
-/* Section headers for Race Team / Club Team */
 .team-section-header {
   font-size: 1.6rem;
   text-align: center;
@@ -110,6 +111,7 @@ h2 {
   display: inline-block;
   padding-bottom: 0.3rem;
 }
+
 
 /* News items */
 .news-item {

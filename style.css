@@ -1,41 +1,61 @@
-/* style.css */
-
-body {
-  font-family: Arial, sans-serif;
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
   margin: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
+/* Body styles */
+body {
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header styles */
 header {
-  background-color: #004080;
+  display: flex;
+  align-items: center;
+  background-color: #004080; /* Dark blue */
   color: white;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  gap: 1rem; /* space between logo, title, and nav */
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  display: block;
 }
 
 header h1 {
   margin: 0;
+  font-size: 1.8rem;
+  flex-shrink: 0;
 }
 
 nav {
-  margin-top: 0.5rem;
+  margin-left: auto; /* Push nav to the right */
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin-right: 1rem;
+  margin-left: 1.2rem;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
+nav a:hover,
 nav a.active {
   text-decoration: underline;
+  color: #a0c4ff; /* lighter blue on hover */
 }
 
+/* Main content styles */
 main {
   max-width: 900px;
   margin: 2rem auto;
@@ -45,44 +65,21 @@ main {
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-h2 {
-  border-bottom: 2px solid #004080;
-  padding-bottom: 0.3rem;
+main h2 {
   margin-bottom: 1rem;
+  color: #004080;
 }
 
-.rider, .sponsor, .news-post {
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
+/* Paragraph styles */
+main p {
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
 }
 
-.photo-placeholder, .logo-placeholder {
-  width: 150px;
-  height: 150px;
-  background-color: #ddd;
-  border: 2px dashed #aaa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
-  font-style: italic;
-  margin-bottom: 1rem;
-  user-select: none;
-}
-
+/* Footer styles */
 footer {
   text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
-  font-size: 0.9rem;
+  margin: 3rem 0 1rem;
   color: #666;
-}
-
-time {
   font-size: 0.9rem;
-  color: #777;
-  display: block;
-  margin-bottom: 0.5rem;
 }

@@ -10,7 +10,7 @@ body {
 header {
   background-color: #1a001f;
   color: #e0e0e0;
-  padding: 2rem 1rem;  /* Increased top/bottom padding */
+  padding: 2rem 1rem;
   text-align: center;
   position: relative;
   display: flex;
@@ -23,7 +23,7 @@ header {
   top: 50%;
   left: 1rem;
   transform: translateY(-50%);
-  height: 80px;        /* Increased for better visibility */
+  height: 80px;
   width: 80px;
   object-fit: contain;
 }
@@ -47,21 +47,50 @@ nav a {
 
 nav a.active,
 nav a:hover {
-  color: #1a001f; /* Light purple highlight */
+  color: #1a001f;
   text-decoration: underline;
 }
 
-main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+/* === HOMEPAGE HERO BANNER === */
+body.home main {
+  height: 80vh;  /* Fill most of the screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
+.home-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.home-logo {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Heading & paragraph styling */
 h2 {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #c084fc;
+}
+
+body.home p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+/* === GENERAL PAGE MAIN (not homepage) === */
+body:not(.home) main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 /* Team section */
@@ -111,7 +140,6 @@ h2 {
   display: inline-block;
   padding-bottom: 0.3rem;
 }
-
 
 /* News items */
 .news-item {

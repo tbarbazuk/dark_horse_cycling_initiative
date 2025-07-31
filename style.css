@@ -553,6 +553,9 @@ footer p {
   margin-bottom: 1.5rem;
   border: 2px solid var(--border);
   transition: all 0.3s ease;
+  /* Add this to constrain very wide logos */
+  max-width: 200px;
+  max-height: 120px;
 }
 
 .sponsor-logo:hover {

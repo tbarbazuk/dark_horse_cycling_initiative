@@ -510,6 +510,19 @@ footer p {
   .news-item {
     padding: 1.5rem;
   }
+
+  /* ADD THIS FOR PHONES */
+  .sponsor {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sponsor-logo {
+    width: 160px;
+    height: 90px;
+  }
+}
+
 }
 /* Sponsors section styles */
 .sponsor {
